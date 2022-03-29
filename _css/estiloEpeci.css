@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+}
+h1{
+    font-size: 20pt;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.base  h2{
+    font-size: 18pt;
+    margin: 0 auto;
+} 
+/*main nav especializações*/
+.navMenuEspe,.base{
+    width: 70%;
+    margin: 0 auto;
+}
+.navMenuEspe ul{
+    margin: 5% 5%;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+    
+}
+.navMenuEspe li{
+margin-right: 2%;
+border-bottom: 2px solid aqua;
+}
+.navMenuEspe li a{
+    color: #000;
+    padding: 10px;
+}
+.navMenuEspe li a:hover{
+    transition: 0.3s;
+    color: #6868;
+    border-bottom:aqua;
+}
+/*main table geral*/
+.base {
+    margin-bottom: 5%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.base figure {
+    position: relative;
+    width: 30%;
+}
+.base img{
+    height: 100%;
+    width: 100%;
+}
+.base table{
+   color: #686868;
+    width: 70%;
+}
+.base table thead{
+    background-color: turquoise;
+    line-height: 3vmax;
+    color: #fff;
+    text-align: left;
+    
+}
+.base table tbody tr{
+    line-height:4vmax;
+}
+.base table {
+    border-spacing: 0;
+}
+.base table tr:nth-of-type(2n+1){
+    background-color: #d4cfcf;
+
+}
+.base table thead tr:nth-of-type(1){
+    background-color: turquoise;
+}
+/*Responividade*/
+/*Telas tablet*/
+@media (max-width:768px){
+    .navMenuEspe {
+        width: 100%;
+    }
+    section.base {
+        padding: 0 3%;
+        width: 100%;
+    }
+    .base table {
+        width: 100%;
+    }
+    .base figure {
+        display: none;  
+    }
+}
+/*Telas mobile*/
+@media (max-width:425px){
+h1{
+font-size: 15pt;
+}
+section.base h2 {
+    font-size: 14pt;
+}
+p{
+    margin: 3%;
+    font-size: 11pt;
+}
+.navMenuEspe ul li:nth-last-child(1) {
+    margin-top: 2%;
+
+}
+}
